@@ -20,7 +20,7 @@ spec:
     targetRevision: 1.11.2  # For Helm, this refers to the chart version.
 
     # helm specific config
-    chart: crossplane-stable/crossplane  # Set this when pulling directly from a Helm repo. DO NOT set for git-hosted Helm charts.
+    chart: crossplane  # Set this when pulling directly from a Helm repo. DO NOT set for git-hosted Helm charts.
     # helm:
     #   passCredentials: false # If true then adds --pass-credentials to Helm commands to pass credentials to all domains
     #   # Extra parameters to set (same as setting through values.yaml, but these take precedence)
