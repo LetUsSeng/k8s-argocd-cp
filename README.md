@@ -16,8 +16,7 @@ For this POC, we are going  to create a bucket that is managed by a combination 
 
 ### ArgoCd Setup
 
-[Setup](https://argo-cd.readthedocs.io/en/release-1.8/operator-manual/declarative-setup/#manage-argo-cd-using-argo-cd)
-My setup
+I setup ArgoCD via kustomize and ArgoCD's [declarative approach](https://argo-cd.readthedocs.io/en/release-1.8/operator-manual/declarative-setup/#manage-argo-cd-using-argo-cd)
 
 ```bash
 kubectl create ns argocd
