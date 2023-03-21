@@ -14,13 +14,18 @@ For this local POC, use the below in order to provision a local Kubernetes clust
 ### AWS Setup
 For this POC, we are going  to create a bucket that is managed by a combination of ArgoCD and Controlplane.
 
-### ArgoCd Setup
+### ArgoCD Setup
 
 I setup ArgoCD via kustomize and ArgoCD's [declarative approach](https://argo-cd.readthedocs.io/en/release-1.8/operator-manual/declarative-setup/#manage-argo-cd-using-argo-cd)
 
 ```bash
 kubectl create ns argocd
 kubectl apply -k argocd/overlays/production -n argocd
+```
+
+To get ArgoCD to manage itself run the following:
+```bash
+kubectl apply -f argocd/argocd.yaml
 ```
 
 ### Crossplane
