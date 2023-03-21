@@ -1,0 +1,7 @@
+resources:
+- github.com/argoproj/argo-cd//manifests/cluster-install?ref=v2.6.6
+
+# changes to config maps
+patches:
+- path: argocd-repo-server-deploy.yaml
+- path: argo-cd-cm.yaml
